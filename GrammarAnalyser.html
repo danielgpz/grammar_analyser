@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>RESULTADOS</title>
+    <style type="text/css">
+      body
+      {
+        background: rgba(256, 256, 256, 0.0);
+        /* background-image: url("./images/felt.png"); */
+        /* display: inline-block; */
+      }
+      div.level1Div
+      {
+        border-radius: 5px;
+        border: thin solid #ADADC9;
+        padding: 8pt;
+        margin: 8pt;
+      }
+      div.level2Div
+      {
+        border-radius: 5px;
+        border: thin solid #ADADC9;
+        padding: 8pt;
+        margin: 8pt;
+      }
+      div.containerDiv
+      {
+        overflow-x: auto;
+      }
+      div.horizontal
+      {
+        display: flex;
+      }
+      h1
+      {
+        border-radius: 5px;
+        background-color: teal;
+        color: #FFFFFF;
+        padding: 4pt;
+        margin: 0pt;
+      }
+      h2
+      {
+        border-radius: 5px;
+        background-color: tomato;
+        color: #FFFFFF;
+        padding: 4pt;
+        margin: 0pt;
+      }
+      h3.error
+      {
+        color: red
+      }
+      h3.good
+      {
+        color: green
+      }
+      p.itemCollection
+      {
+        white-space: nowrap;
+        margin: 0;
+        padding: 0;
+      }
+      table
+      {
+        border-collapse: collapse;
+        padding: 4pt;
+        margin: 4pt;
+      }
+      td
+      {
+        margin: 0px;
+        border: thin solid #000000;
+        text-align: center;
+        padding: 4pt;
+      }
+      td.errorCell
+      {
+        margin: 0px;
+        border: thin solid #000000;
+        text-align: center;
+        padding: 4pt;
+        background-color: rgb(150, 100, 100);
+      }
+      th
+      {
+        margin: 0px;
+        border: thin solid #000000;
+        font-weight: bold;
+        text-align: center;
+        padding: 4pt;
+        background-color: #DDDDDD;
+      }
+      ul
+      {
+        list-style-type: none;
+        padding: 6pt;
+        margin: 0pt;
+      }
+      h3
+      {
+        padding: 4pt;
+        margin: 0pt;
+      }
+      .grammarSymbol
+      {
+        font-family: "Courier New" , Courier, monospace;
+        color: #000066;
+        font-weight: bold;
+      }
+      .grammarSymbolSpecial, .grammarEpsilon
+      {
+        font-family: "Courier New" , Courier, monospace;
+        font-weight: bold;
+        font-style: italic;
+        color: #000066;
+      }
+      .grammarDot
+      {
+        font-family: "Courier New" , Courier, monospace;
+        color: #000000;
+      }
+      .grammarArrow
+      {
+        font-family: "Times New Roman" , Times, serif;
+        color: #000000;
+        font-weight: bold;
+        font-size: larger;
+      }
+      .grammarOr, .grammarComma
+      {
+        font-family: "Times New Roman" , Times, serif;
+        color: #000000;
+        font-weight: bold;
+        font-size: larger;
+      }
+      .headerFooterDiv
+      {
+        background-color: #C8C8C8;
+        padding: 2pt;
+      }
+      h4
+      {
+        padding: 4pt;
+        margin: 0pt;
+      }
+      td.separatorTableCell
+      {
+        padding: 1px;
+        margin: 1px;
+        border: thin solid #000000;
+      }
+      th.separatorTableCell
+      {
+        padding: 1px;
+        margin: 1px;
+        border: thin solid #000000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="level1Div">
+      <h1>Gram&aacute;tica</h1>
+      <div>
+        %s
+      </div>
+      <div class="level2Div">
+        <h2>Gram&aacute;tica sin recursividad izquierda, prefijos comunes y produciones innecesarias</h2>
+        <div>
+          %s
+        </div>
+      </div>
+    </div>
+    <div class="level1Div">
+      <h1>Conjuntos FIRST y FOLLOW</h1>
+      <div class="level2Div">
+        <h2>FIRST</h2>
+        <div>
+          %s
+        </div>
+      </div>
+      <div class="level2Div">
+        <h2>FOLLOW</h2>
+        <div>
+          %s
+        </div>
+      </div>
+    </div>
+    <div class="level1Div">
+      <h1>An&aacute;lisis LL(1)</h1>
+      <div class="level2Div">
+        <h2>Tabla LL(1)</h2>
+        <div class="containerDiv">
+          %s
+        </div>
+      </div>
+      <div class="level2Div">
+        <h2>Resultado</h2>
+        %s
+      </div>
+    </div>
+    <div class="level1Div">
+      <h1>Gram&aacute;tica aumentada</h1>
+      <div>
+        %s
+      </div>
+    </div>
+    <div class="level1Div">
+      <h1>An&aacute;lisis SLR(1)</h1>
+      <div class="level2Div">
+        <h2>Colecci&oacute;n de items LR(0)</h2>
+        <div class="containerDiv">
+          <div class="horizontal">
+            %s
+          </div>
+        </div>
+      </div>
+      <div class="level2Div">
+        <h2>Aut&oacute;mata LR(0)</h2>
+        <div class="containerDiv">
+          %s
+        </div>
+      </div>
+      <div class="level2Div">
+        <h2>Tablas ACTION-GOTO</h2>
+        <div class="containerDiv">
+          <div class="horizontal">
+            %s
+            %s
+          </div>
+        </div>
+      </div>
+      <div class="level2Div">
+        <h2>Resultado</h2>
+        %s
+      </div>
+    </div>
+    <div class="level1Div">
+      <h1>An&aacute;lisis LR(1)</h1>
+      <div class="level2Div">
+        <h2>Colecci&oacute;n de items LR(1)</h2>
+        <div class="containerDiv">
+          <div class="horizontal">
+            %s
+          </div>
+        </div>
+      </div>
+      <div class="level2Div">
+        <h2>Aut&oacute;mata LR(1)</h2>
+        <div class="containerDiv">
+          %s
+        </div>
+      </div>
+      <div class="level2Div">
+        <h2>Tabla ACTION-GOTO</h2>
+        <div class="containerDiv">
+          <div class="horizontal">
+            %s
+            %s
+          </div>
+        </div>
+      </div>
+      <div class="level2Div">
+        <h2>Resultado</h2>
+        %s
+      </div>
+    </div>
+    <div class="level1Div">
+      <h1>An&aacute;lisis LALR(1)</h1>
+      <div class="level2Div">
+        <h2>Colecci&oacute;n de items LALR(1)</h2>
+        <div class="containerDiv">
+          <div class="horizontal">
+            %s
+          </div>
+        </div>
+      </div>
+      <div class="level2Div">
+        <h2>Aut&oacute;mata LALR(1)</h2>
+        <div class="containerDiv">
+          %s
+        </div>
+      </div>
+      <div class="level2Div">
+        <h2>Tabla ACTION-GOTO</h2>
+        <div class="containerDiv">
+          <div class="horizontal">
+            %s
+            %s
+          </div>
+        </div>
+      </div>
+      <div class="level2Div">
+        <h2>Resultado</h2>
+        %s
+      </div>
+    </div>
+    <div class="level1Div">
+      <h1>Derivaciones de las cadenas</h1>
+      <div class="containerDiv">
+        <div class="horizontal">
+          %s
+        </div>
+      </div>
+    </div>
+    <div class="level1Div">
+      <h1>An&aacute;lisis de Regularidad</h1>
+      <div class="level2Div">
+        <h2>Resultado</h2>
+        %s
+      </div>
+      <div class="level2Div">
+        <h2>Aut&oacute;mata</h2>
+        <div class="containerDiv">
+          %s
+        </div>
+      </div>
+      <div class="level2Div">
+        <h2>Expresi&oacute;n Regular</h2>
+          %s
+      </div>
+    </div>
+  </body>
+</html>
